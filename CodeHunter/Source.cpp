@@ -59,7 +59,7 @@ int main()
 		else
 		{
 			++unknownCharacters;
-			// counts the characters that are unknown 
+			// counts the characters that are unknown
 		}
 	}
 
