@@ -21,8 +21,9 @@ int main()
 	int lengthOfStringSubmittedForAnalysis = 0;
 	int unknownCharacters = 0;
 	int checkSum = 0;
+	int symbols = 0;
 	int bar = 0;
-
+	// FUBAR , an old WW2 term pronounced FOO + BAR, meaning "F***ed up beyond all Recoginition"
 	cout << "Welcome to the CIA code Hunter Program!" << endl;
 	cout << "Please type in text to analyze: " << endl;
 	getline(cin, textToAnalyze);
@@ -56,6 +57,12 @@ int main()
 			++spaces;
 			// counts the number of blank areas in a sentence
 		}
+		else if (textToAnalyze[i] == '.' || textToAnalyze[i] == '!' || textToAnalyze[i] == '?' || textToAnalyze[i] == ',')
+		{
+			// a counter for the periods, commas, and other endline markers!
+			++symbols;
+			// This is an addition to the program I made, to make the number of unknown characters less
+		}
 		else
 		{
 			++unknownCharacters;
@@ -64,12 +71,13 @@ int main()
 	}
 
 	lengthOfStringSubmittedForAnalysis = textToAnalyze.length();
-	checkSum = unknownCharacters + vowels + consonants + digits + spaces;
+	checkSum = unknownCharacters + vowels + consonants + digits + spaces + symbols;
 
 	cout << "Vowels: " << vowels << endl;
 	cout << "Consonants: " << consonants << endl;
 	cout << "Digits: " << digits << endl;
 	cout << "White spaces: " << spaces << endl;
+	cout << "Symbols in scentence : " << symbols << endl;
 	cout << "Length of string submitted for analysis: " << lengthOfStringSubmittedForAnalysis << endl;
 	cout << "Number of characters CodeHunter could not identify: " << unknownCharacters << endl;
 	cout << "Checksum: " << checkSum << endl;
