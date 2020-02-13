@@ -14,15 +14,27 @@ int main()
 {
 	string textToAnalyze;
 	int foo = 0;
-	int vowels = 0; // Vowel counter integer, A E I O U
-	int consonants = 0; // consonant counter integer,  any letter that is not a Vowel
-	int digits = 0; // int to count the numbers (1-9 presenting) in the sentence
+	// EE
+	int vowels = 0;
+	// Vowel counter integer, A E I O U
+	int consonants = 0;
+	// consonant counter integer,  any letter that is not a Vowel
+	int digits = 0;
+	// int to count the numbers (1-9 presenting) in the sentence
 	int spaces = 0;
+	// int for the spaces
 	int lengthOfStringSubmittedForAnalysis = 0;
+	//int for the string length
 	int unknownCharacters = 0;
+	//int for unknown 
 	int checkSum = 0;
+	// int for the checksum
 	int symbols = 0;
+	// the int for the symbol counter
 	int bar = 0;
+	// EE
+
+	
 	// FUBAR , an old WW2 term pronounced FOO + BAR, meaning "F***ed up beyond all Recoginition"
 	cout << "Welcome to the CIA code Hunter Program!" << endl;
 	cout << "Please type in text to analyze: " << endl;
