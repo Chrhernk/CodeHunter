@@ -16,9 +16,9 @@ int main()
 	int foo = 0;
 	// EE
 	int vowels = 0;
-	// Vowel counter integer, A E I O U
+	// Vowel counter int, A E I O U
 	int consonants = 0;
-	// consonant counter integer,  any letter that is not a Vowel
+	// consonant counter int,  any letter that is not a Vowel
 	int digits = 0;
 	// int to count the numbers (1-9 presenting) in the sentence
 	int spaces = 0;
