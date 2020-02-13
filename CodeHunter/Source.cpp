@@ -50,7 +50,7 @@ int main()
 		else if (textToAnalyze[i] >= '0' && textToAnalyze[i] <= '9')
 		{
 			++digits;
-			// this adds to the digit counter, and tells how many letters or spaces are in the sentence.
+			// this adds to the digit counter, and tells how many numbers are in the sentence.
 		}
 		else if (textToAnalyze[i] == ' ')
 		{
@@ -77,7 +77,7 @@ int main()
 	cout << "Consonants: " << consonants << endl;
 	cout << "Digits: " << digits << endl;
 	cout << "White spaces: " << spaces << endl;
-	cout << "Symbols in scentence : " << symbols << endl;
+	cout << "Symbols in string : " << symbols << endl;
 	cout << "Length of string submitted for analysis: " << lengthOfStringSubmittedForAnalysis << endl;
 	cout << "Number of characters CodeHunter could not identify: " << unknownCharacters << endl;
 	cout << "Checksum: " << checkSum << endl;
