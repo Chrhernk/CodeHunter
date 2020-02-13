@@ -72,15 +72,24 @@ int main()
 
 	lengthOfStringSubmittedForAnalysis = textToAnalyze.length();
 	checkSum = unknownCharacters + vowels + consonants + digits + spaces + symbols;
-
+	//algorythm that finds the true leangth of the string for the checksum
+	
 	cout << "Vowels: " << vowels << endl;
+	// displays the vowels in the string
 	cout << "Consonants: " << consonants << endl;
+	// displays the consonants in the string
 	cout << "Digits: " << digits << endl;
+	// displays the digits in the string
 	cout << "White spaces: " << spaces << endl;
+	//displays the white space ( Spaces ) In the string
 	cout << "Symbols in string : " << symbols << endl;
+	//displays the puncuation symbols in the string
 	cout << "Length of string submitted for analysis: " << lengthOfStringSubmittedForAnalysis << endl;
+	// displays the string leingth
 	cout << "Number of characters CodeHunter could not identify: " << unknownCharacters << endl;
+	//displays the number of unknown characters
 	cout << "Checksum: " << checkSum << endl;
+	// displays the checksum
 
 	if (checkSum == lengthOfStringSubmittedForAnalysis)
 	{
@@ -92,6 +101,6 @@ int main()
 	}
 
 	system("pause");
-
+	// pauses the system as to not make it end the program automaticly.
 	return 0;
 }
